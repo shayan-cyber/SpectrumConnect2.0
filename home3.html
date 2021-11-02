@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<style>
+    #hero {
+        height: 90vh;
+
+        /* margin-top: 10vh; */
+
+        padding: 2rem;
+    }
+
+    #para {
+        color: #000000;
+        font-size: 7vw;
+    }
+
+    .connect {
+        color: #000000 !important;
+
+        text-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.2);
+
+        font-family: "Open Sans", sans-serif;
+
+        
+        /* line-height: 3.9rem; */
+        letter-spacing: 0.1rem;
+        font-size: 4vw;
+        margin-top: 1.3vw;
+        font-weight: 800;
+        opacity: 0.8;
+        transform: scaleY(1.25);
+    }
+
+    #image1 {
+        max-width: 37vw;
+        animation-name: floating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        50% {
+            transform: translate(0, 19px);
+        }
+
+        100% {
+            transform: translate(0, -0px);
+        }
+    }
+
+    #nav-link {
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 1rem;
+        color: #000000;
+        opacity: 0.65;
+    }
+
+    #nav-link:hover {
+        color: black;
+        opacity: 1;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+        #para {
+            font-size:45px;
+        }
+
+        .connect {
+            font-size: 30px;
+        }
+
+        #nav-link {
+            font-size: 0.8rem;
+        }
+    }
+
+   
+
+    .content-img {
+        width: 100%;
+        background-size: cover;
+    }
+
+    #illus {
+        /* height: 300px; */
+        width: 400px;
+        max-width: 90vw;
+    }
+
+
+
+
+    #illus {
+
+      animation: skew 2s linear infinite;
+    }
+
+    
+@keyframes skew {
+  0% {
+    transform: translateX(25px);
+  }
+  50%{
+      transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(25px);
+  }
+}
+
+    /* #illus:hover {
+        transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+    } */
+
+    #bg-div {
+
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(124, 131, 253, 1) 100%);
+    }
+
+
+
+
+
+.footer{
+    background: #111;
+    color: white;
+    height: auto;
+    width: 100% !important;
+    
+    padding-top: 20px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    margin: 10px auto;
+}
+.footer-content a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-content a i{
+    font-size: 40px;
+    transition: color 0.5s ease;
+}
+.footer-content a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background: black;
+    text-align: center;
+    /* width: 100vw; */
+    padding: 15px 0;
+}
+
+
+
+
+
+/* button css start */
+
+
+
+
+
+
+
+
+
+
+
+.blog-slider {
+  width: 95%;
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 25px;
+  border-radius: 25px;
+  height: 600px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .blog-slider {
+    max-width: 680px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-slider {
+    min-height: 500px;
+    height: auto;
+    margin: 180px auto;
+  }
+}
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .blog-slider {
+    height: 350px;
+  }
+}
+.blog-slider__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__item {
+    flex-direction: column;
+  }
+}
+.blog-slider__item.swiper-slide-active .blog-slider__img img {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > * {
+  opacity: 1;
+  transform: none;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(5) {
+  transition-delay: 0.7s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(6) {
+  transition-delay: 0.8s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(7) {
+  transition-delay: 0.9s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(8) {
+  transition-delay: 1s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(9) {
+  transition-delay: 1.1s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(10) {
+  transition-delay: 1.2s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(11) {
+  transition-delay: 1.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(12) {
+  transition-delay: 1.4s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(13) {
+  transition-delay: 1.5s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(14) {
+  transition-delay: 1.6s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(15) {
+  transition-delay: 1.7s;
+}
+.blog-slider__img {
+  width: 500px;
+  /* height:80%; */
+  flex-shrink: 0;
+  height: 500px;
+  /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
+  /* box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2); */
+  border-radius: 20px;
+  transform: translateX(-80px);
+  overflow: hidden;
+}
+.blog-slider__img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.blog-slider__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__img {
+    transform: translateY(-40%);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .blog-slider__img {
+    height: 360px;
+  }
+}
+.blog-slider__content {
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__content {
+    margin-top: -80px;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__content {
+    padding: 0;
+  }
+}
+.blog-slider__content > * {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.4s;
+}
+.blog-slider__code {
+  color: #7b7992;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+.blog-slider__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d0925;
+  margin-bottom: 20px;
+}
+.blog-slider__text {
+  color: #4e4a67;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+.blog-slider__button {
+  display: inline-flex;
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+  text-decoration: none;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__button {
+    width: 100%;
+  }
+}
+.blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.blog-slider__pagination {
+  position: absolute;
+  z-index: 21;
+  right: 20px;
+  width: 11px !important;
+  text-align: center;
+  left: auto !important;
+  top: 50%;
+  bottom: auto !important;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination {
+    transform: translateX(-50%);
+    left: 50% !important;
+    top: 205px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 8px 0;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+  }
+}
+.blog-slider__pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  display: block;
+  border-radius: 10px;
+  background: #062744;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+.blog-slider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fd3838;
+  height: 30px;
+  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination .swiper-pagination-bullet-active {
+    height: 11px;
+    width: 30px;
+  }
+}
+
+</style>
+
+<body>
+    <div class="container-fluid" style="background-image: url(images/bg.jpg); background-size: cover" id="main">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/ecslogo.png" alt="" style="height: 2rem;"
+                        class="d-inline-block align-text-top" />
+                </a>
+                <div class="d-flex justify-content-end">
+                    <div>
+                        <a id="nav-link" href="#">Home</a>
+                    </div>
+                    <div>
+                        <a id="nav-link" href="#modules">Modules</a>
+                    </div>
+                    <div>
+                        <a id="nav-link" href="#about">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="hero" class="container-fluid">
+            <div style="margin-top: 10vh" class="d-flex justify-content-center">
+                <div class="imgstyle">
+                    <img src="images/spectrumlogo.png" alt="Spectrum Connect image" id="image1" />
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div style="padding: 1rem; margin-top: 1rem">
+                        <h1 style="font-weight: 100; color: black" id="para">
+                            pectrum
+                        </h1>
+
+                        <h1 class="connect">Connect 2.0</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modules" style="background-image: url(imgs/bg-5.png); background-repeat: no-repeat;background-size: cover">
+        <br>
+        <br>
+        <!-- <br>
+        <div class="container  mb-5">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12"><img id="illus" src="imgs/illust.png" alt=""></div>
+                <div class="col-lg-6 col-sm-12" style="padding:2rem;">
+                    <h1 style="font-size:3rem; font-weight:bold; opacity:0.8">The Elixir of electronics <img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-cpu-essentials-icongeek26-outline-colour-icongeek26.png"/></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, assumenda harum. Natus atque unde
+                        cumque sed porro amet voluptates explicabo?</p>
+                </div>
+            </div>
+        </div>
+        <br> -->
+
+
+
+        
+
+    <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              
+              <img src="imgs/Fantasy_Soccer_poster_pre-final.png" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Fantasy Soccer</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="imgs/Hour of Siege.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Hour of siege</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="imgs/pour your words (3).png" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Pour your words</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+
+      <br><br><br>
+
+        
+
+    </div>
+
+
+
+
+    <footer id="about" class="footer container-fluid">
+        <div class="footer-content">
+            <h3>About</h3>
+            <p>Email Us: ecs.nitsilchar2022@gmail.com</p>
+            <p>Follow Us:</p>
+            <a href="https://www.facebook.com/spectrum.nits" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2021 ECS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+    </script>
+   
+ 
+<!-- 
+    <script>
+        const downButton = document.querySelector(".down-button");
+        const upButton = document.querySelector(".up-button");
+        const sidebar = document.querySelector(".sidebar");
+        const mainSlide = document.querySelector(".main-slide");
+        const slidesCount = mainSlide.querySelectorAll("#content").length;
+        const container = document.querySelector(".container-slide");
+
+        let activeSlideIndex = 0;
+
+        sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
+
+        function changeSlide(direction) {
+            if (direction === "up") {
+                activeSlideIndex++;
+                if (activeSlideIndex === slidesCount) {
+                    activeSlideIndex = 0;
+                }
+            } else if (direction === "down") {
+                activeSlideIndex--;
+                if (activeSlideIndex < 0) {
+                    activeSlideIndex = slidesCount - 1;
+                }
+            }
+
+            const height = container.clientHeight;
+
+            mainSlide.style.transform = `translateY(-${activeSlideIndex * height
+                }px)`;
+            sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`;
+        }
+
+        downButton.addEventListener("click", () => {
+            changeSlide("down");
+        });
+
+        upButton.addEventListener("click", () => {
+            changeSlide("up");
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowUp") {
+                changeSlide("up");
+            } else if (event.key === "ArrowDown") {
+                changeSlide("down");
+            }
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
